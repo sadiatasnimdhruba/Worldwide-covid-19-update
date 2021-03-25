@@ -22,7 +22,7 @@ function todayData()
                     
      
              var template=`
-               		<h1 class="text-center">Today's situation by countries</h1>
+               		<h1 class="text-center">Today's situation by country</h1>
                             <h3><div class="date text-center"></div></h3>
                              <br><br><div class="form">
                         

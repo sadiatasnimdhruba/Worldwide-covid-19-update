@@ -20,7 +20,7 @@ function w3_close() {
              var template=`
                		<br><br><div class="form">
                         
-                     <input type="search" id="search" class="p-1" placeholder="Enter country name" onkeyup="searchfun()" />
+                     <input type="search" id="search" class="p-1" placeholder=" Enter country name" onkeyup="searchfun()" />
                           <button id="search-button" class="btn-primary p-1">Search</button>
                           
                         </div><br><br>
