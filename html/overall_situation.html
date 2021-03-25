@@ -34,16 +34,16 @@ body
 </style>
 </head>
 <body>
-		 <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none;background-color: #7e95ff;" id="mySidebar">
+		 <div class="w3-sidebar w3-bar-block w3-card w3-animate-left pt-5" style="display:none;background-color: #7e95ff;" id="mySidebar">
   <button class="w3-bar-item w3-button w3-large text-light"
   onclick="w3_close()">Close <span class="pull-right">&times;</span></button>
   <a href="../index.html" class="w3-bar-item w3-button text-light">Dashboard</a>
   <a href="overall_situation.html" class="w3-bar-item w3-button text-light">Overall situation by country</a>
-  <a href="today_situation.html" class="w3-bar-item w3-button text-light">Recent situation by country</a>
+  <a href="today_situation.html" class="w3-bar-item w3-button text-light" onclick="todayData(); return false;">Recent situation by country</a>
   <a href="overall_info.html" class="w3-bar-item w3-button text-light">overall info by country</a>
 </div>
     <div class="content">
-	<div class="content container">
+	<div class="content container-fluid">
 		<div class="container-fluid">
 			
 <div id="main">
@@ -53,6 +53,7 @@ body
     <h1 class="text-center">Covid-19 information</h1>
   </div>
 </div>
+<h1 class="text-center">Overall situation by country</h1>
 
 <div class="container text-center" id="output"></div>
 

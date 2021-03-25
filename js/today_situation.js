@@ -22,11 +22,11 @@ function todayData()
                     
      
              var template=`
-               		<h1 class="text-center">Today's Covid situation by countries</h1>
+               		<h1 class="text-center">Today's situation by countries</h1>
                             <h3><div class="date text-center"></div></h3>
                              <br><br><div class="form">
                         
-                     <input type="search" id="search" class="p-1" placeholder="Enter country name" onkeyup="searchfun()" />
+                     <input type="search" id="search" class="p-1" placeholder=" Enter country name" onkeyup="searchfun()" />
                           <button id="search-button" class="btn-primary p-1"><i class="fa fa-search"></i> Search</button>
                           
                         </div><br>
@@ -101,10 +101,10 @@ function dateBuilder(d) {
                     
      
              var template=`
-             <h1 class="text-center">Yesterday's Covid situation by countries</h1>
+             <h1 class="text-center">Yesterday's situation by country</h1>
                		<br><br><div class="form">
                         
-                     <input type="search" id="search" class="p-1" placeholder="Enter country name" onkeyup="searchfun()" />
+                     <input type="search" id="search" class="p-1" placeholder=" Enter country name" onkeyup="searchfun()" />
                           <button id="search-button" class="btn-primary p-1"><i class="fa fa-search"></i> Search</button>
                           
                         </div><br>
@@ -161,10 +161,10 @@ function dateBuilder(d) {
                     
      
              var template=`
-             <h1 class="text-center">Two days ago Covid situation by countries</h1>
+             <h1 class="text-center">Two days ago situation by country</h1>
                		<br><br><div class="form">
                         
-                     <input type="search" id="search" class="p-1" placeholder="Enter country name" onkeyup="searchfun()" />
+                     <input type="search" id="search" class="p-1" placeholder=" Enter country name" onkeyup="searchfun()" />
                           <button id="search-button" class="btn-primary p-1"><i class="fa fa-search"></i> Search</button>
                           
                         </div><br>
