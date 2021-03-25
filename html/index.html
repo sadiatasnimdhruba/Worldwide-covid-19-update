@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>html</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="../css/font-awesome.min.css" rel="stylesheet">
+<style>
+
+.box	
+{
+    box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 10%);
+    border-radius: 3px;
+}
+.w3-teal, .w3-hover-teal:hover
+{
+	    background-color: #7e95ff!important;
+      border-radius: 8px;
+      
+}
+ a.text-light:hover {
+    color: #000!important;
+
+}
+.panel-heading
+{
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+  color:#fff;
+  background-image: linear-gradient(rgb(83 103 219), rgb(152 223 255));
+  box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 10%);
+    border-radius: 3px;
+}
+.panel-footer
+{
+   border:2px solid rgb(45 167 223);
+   border-bottom-left-radius: 13px;
+   border-bottom-right-radius: 13px;
+}
+
+
+
+	</style>
+
+</head>
+
+<body>
+	 <div class="w3-sidebar w3-bar-block w3-card w3-animate-left pt-5" style="display:none;background-color: #7e95ff;" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large text-light"
+  onclick="w3_close()">Close <span class="pull-right">&times;</span></button>
+  <a href="index.html" class="w3-bar-item w3-button text-light">Dashboard</a>
+  <a href="overall_situation.html" class="w3-bar-item w3-button text-light">Overall situation by country</a>
+  <a href="today_situation.html" class="w3-bar-item w3-button text-light">Recent situation by country</a>
+  <a href="overall_info.html" class="w3-bar-item w3-button text-light">overall info by country</a>
+</div>
+    <div class="content">
+	<div class="content container">
+		<div class="container-fluid">
+			
+<div id="main">
+<div class="w3-teal bg-info mt-3">
+  <button id="openNav" class="w3-button w3-teal w3-xlarge btn-dark" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+    <h1 class="text-center">Covid-19 information</h1>
+  </div>
+</div>
+    <h1 class="text-info mt-3"><i class="fa fa-dashboard"></i><b> Dashboard</b><small> Statistics overview</small></h1>
+      <h2 class="text-center">Total 221 countries</h2><br>
+    <h4 class="box bg-light p-3"> Overall situation</h4>
+    <br>
+
+  <div class="row">
+
+  	    <div class="col-sm-3 mb-3">
+      <div class="panel">
+        <div class="panel-heading p-2">
+          <div class="row">
+            <div class="col-xs-3"><img src="../images/syringe.png" width="100" height="90">
+              <p class="pull-right" id="totaltest" style="font-size: 25px"></p>
+            </div>
+            <div class="col-xs-9">
+              
+              <div class="clearfix"></div>
+              <div class="pull-right">total tests</div>
+            </div>
+          </div>
+        </div>
+        <a href="overall_situation.html">
+        <div class="panel-footer bg-light p-2" style="color:#000;">
+          <span class="pull-left">View total tests</span>
+          <span class="pull-right"><i class="fa fa-arrow-circle-o-right fa-2x"></i></span>
+            <div class="clearfix"></div>
+        </div>
+      </a>
+      </div>
+    </div>
+
+
+    
+           <div class="col-sm-3 mb-3">
+      <div class="panel">
+        <div class="panel-heading p-2">
+          <div class="row">
+            <div class="col-xs-3"><img src="../images/case.png" width="100" height="90">
+              <p class="pull-right" id="totalcases" style="font-size: 25px"></p>
+            </div>
+            <div class="col-xs-9">
+              
+              <div class="clearfix"></div>
+              <div class="pull-right">Total cases</div>
+            </div>
+          </div>
+        </div>
+        <a href="overall_situation.html">
+        <div class="panel-footer bg-light p-2" style="color:#000;">
+          <span class="pull-left">View total cases</span>
+          <span class="pull-right"><i class="fa fa-arrow-circle-o-right fa-2x"></i></span>
+            <div class="clearfix"></div>
+        </div>
+      </a>
+      </div>
+    </div>
+
+    <div class="col-sm-3 mb-3">
+      <div class="panel">
+        <div class="panel-heading p-2">
+          <div class="row">
+            <div class="col-xs-3"><img src="../images/Virus-512.png" width="100" height="90">
+              <p class="pull-right" id="totalDeaths" style="font-size: 30px"> </p>
+            </div>
+            <div class="col-xs-9">
+              
+              <div class="clearfix"></div>
+              <div class="pull-right">total deaths</div>
+            </div>
+          </div>
+        </div>
+        <a href="overall_situation.html">
+        <div class="panel-footer bg-light p-2" style="color:#000;">
+          <span class="pull-left">View total deaths</span>
+          <span class="pull-right"><i class="fa fa-arrow-circle-o-right fa-2x"></i></span>
+            <div class="clearfix"></div>
+        </div>
+      </a>
+      </div>
+    </div>
+
+      <div class="col-sm-3 mb-3">
+      <div class="panel">
+        <div class="panel-heading p-2">
+          <div class="row">
+            <div class="col-xs-3"><img src="../images/recovery.png" width="100" height="90">
+              <p class="pull-right" id="totalrecover" style="font-size: 25px"></p>
+            </div>
+            <div class="col-xs-9">
+              
+              <div class="clearfix"></div>
+              <div class="pull-right">total recovered</div>
+            </div>
+          </div>
+        </div>
+        <a href="today_situation.html">
+        <div class="panel-footer bg-light p-2" style="color:#000;">
+          <span class="pull-left">View total recovered</span>
+          <span class="pull-right"><i class="fa fa-arrow-circle-o-right fa-2x"></i></span>
+            <div class="clearfix"></div>
+        </div>
+      </a>
+      </div>
+    </div>
+</div>
+      <h4 class="box bg-light p-3"> Today's situation </h4>
+      <h4 class="date text-center"></h4>
+    <br>
+  
+    <div class="row">
+
+
+
+    <div class="col-sm-4 mb-3">
+      <div class="panel">
+        <div class="panel-heading p-2">
+          <div class="row">
+            <div class="col-xs-3"><img src="../images/case.png" width="100" height="90">
+              <p class="pull-right" style="font-size: 35px" id="todayCase"></p>
+            </div>
+            <div class="col-xs-9">
+              
+              <div class="clearfix"></div>
+              <div class="pull-right">Total cases</div>
+            </div>
+          </div>
+        </div>
+        <a href="today_situation.html">
+        <div class="panel-footer bg-light p-2" style="color:#000;">
+          <span class="pull-left">View total cases</span>
+          <span class="pull-right"><i class="fa fa-arrow-circle-o-right fa-2x"></i></span>
+            <div class="clearfix"></div>
+        </div>
+      </a>
+      </div>
+    </div>
+
+
+    <div class="col-sm-4 mb-3">
+      <div class="panel">
+        <div class="panel-heading p-2">
+          <div class="row">
+            <div class="col-xs-3"><img src="../images/Virus-512.png" width="100" height="90">
+              <p class="pull-right" id="todayDeath" style="font-size: 35px"> </p>
+            </div>
+            <div class="col-xs-9">
+              
+              <div class="clearfix"></div>
+              <div class="pull-right">total deaths</div>
+            </div>
+          </div>
+        </div>
+         <a href="today_situation.html">
+        <div class="panel-footer bg-light p-2" style="color:#000;">
+          <span class="pull-left">View total deaths</span>
+          <span class="pull-right"><i class="fa fa-arrow-circle-o-right fa-2x"></i></span>
+            <div class="clearfix"></div>
+        </div>
+      </a>
+      </div>
+    </div>
+           <div class="col-sm-4 mb-3">
+      <div class="panel">
+        <div class="panel-heading p-2">
+          <div class="row">
+            <div class="col-xs-3"><img src="../images/recovery.png" width="100" height="90">
+              <p class="pull-right" id="todayRecover" style="font-size: 35px"></p>
+            </div>
+            <div class="col-xs-9">
+              
+              <div class="clearfix"></div>
+              <div class="pull-right">Total recovered</div>
+            </div>
+          </div>
+        </div>
+         <a href="today_situation.html">
+        <div class="panel-footer bg-light p-2" style="color:#000;">
+          <span class="pull-left">View total recovered</span>
+          <span class="pull-right"><i class="fa fa-arrow-circle-o-right fa-2x"></i></span>
+            <div class="clearfix"></div>
+        </div>
+      </a>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+           
+        <div class="container text-center" id="output"></div> 
+</div>
+  
+        
+
+ 
+    <script src="../js/script.js">
+    </script>
+</body>
+
+</html>
